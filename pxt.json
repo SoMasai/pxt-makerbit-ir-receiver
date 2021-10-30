@@ -5,12 +5,13 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "background": "github:1010Technologies/pxt-makerbit-background#v1.0.1"
+        "background": "github:SoMasai/pxt-makerbit-ir-receiver"
     },
     "files": [
         "README.md",
         "infrared-receiver.ts",
-        "_locales/ja/MakerBit-IR-Receiver-strings.json"
+        "_locales/ja/MakerBit-IR-Receiver-strings.json",
+        "_locales/JP/MakerBit-IR-Receiver-strings.json"
     ],
     "testFiles": [
         "test.ts"
