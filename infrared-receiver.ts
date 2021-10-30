@@ -1,49 +1,75 @@
 // MakerBit blocks supporting a Keyestudio Infrared Wireless Module Kit
 // (receiver module+remote controller)
 
+// const enum IrButton {
+//   //% block="any"
+//   Any = -1,
+//   //% block="▲"
+//   Up = 0x62,
+//   //% block=" "
+//   Unused_2 = -2,
+//   //% block="◀"
+//   Left = 0x22,
+//   //% block="OK"
+//   Ok = 0x02,
+//   //% block="▶"
+//   Right = 0xc2,
+//   //% block=" "
+//   Unused_3 = -3,
+//   //% block="▼"
+//   Down = 0xa8,
+//   //% block=" "
+//   Unused_4 = -4,
+//   //% block="1"
+//   Number_1 = 0x68,
+//   //% block="2"
+//   Number_2 = 0x98,
+//   //% block="3"
+//   Number_3 = 0xb0,
+//   //% block="4"
+//   Number_4 = 0x30,
+//   //% block="5"
+//   Number_5 = 0x18,
+//   //% block="6"
+//   Number_6 = 0x7a,
+//   //% block="7"
+//   Number_7 = 0x10,
+//   //% block="8"
+//   Number_8 = 0x38,
+//   //% block="9"
+//   Number_9 = 0x5a,
+//   //% block="*"
+//   Star = 0x42,
+//   //% block="0"
+//   Number_0 = 0x4a,
+//   //% block="#"
+//   Hash = 0x52,
+// }
+
 const enum IrButton {
-  //% block="any"
-  Any = -1,
-  //% block="▲"
-  Up = 0x62,
-  //% block=" "
-  Unused_2 = -2,
-  //% block="◀"
-  Left = 0x22,
-  //% block="OK"
-  Ok = 0x02,
-  //% block="▶"
-  Right = 0xc2,
-  //% block=" "
-  Unused_3 = -3,
-  //% block="▼"
-  Down = 0xa8,
-  //% block=" "
-  Unused_4 = -4,
-  //% block="1"
-  Number_1 = 0x68,
-  //% block="2"
-  Number_2 = 0x98,
-  //% block="3"
-  Number_3 = 0xb0,
-  //% block="4"
-  Number_4 = 0x30,
-  //% block="5"
-  Number_5 = 0x18,
-  //% block="6"
-  Number_6 = 0x7a,
-  //% block="7"
-  Number_7 = 0x10,
-  //% block="8"
-  Number_8 = 0x38,
-  //% block="9"
-  Number_9 = 0x5a,
-  //% block="*"
-  Star = 0x42,
-  //% block="0"
-  Number_0 = 0x4a,
-  //% block="#"
-  Hash = 0x52,
+  //% block="B0_0"
+  B0_0 = 0x45,
+  B0_1 = 0x46,
+  B0_2 = 0x47,
+  B1_0 = 0x44,
+  B1_1 = 0x40,
+  B1_2 = 0x43,
+  B2_0 = 0x07,
+  B2_1 = 0x15,
+  B2_2 = 0x09,
+  B3_0 = 0x16,
+  B3_1 = 0x19,
+  B3_2 = 0x0D,
+  B4_0 = 0x0C,
+  B4_1 = 0x18,
+  B4_2 = 0x5E,
+  B5_0 = 0x08,
+  B5_1 = 0x1C,
+  B5_2 = 0x5A,
+  //% block="B6_0"
+  B6_0 = 0x42,
+  B6_1 = 0x52,
+  B6_2 = 0x4A,
 }
 
 const enum IrButtonAction {
@@ -58,6 +84,8 @@ const enum IrProtocol {
   Keyestudio = 0,
   //% block="NEC"
   NEC = 1,
+  //% block_Other = "NEC_OTHER"
+  NEC_OTHER = 2,
 }
 
 //% color=#0fbc11 icon="\u272a" block="MakerBit"
