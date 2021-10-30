@@ -34,5 +34,5 @@
   "RBBit.wasIrDataReceived|block": "IR data was received",
   "RBBit|block": "RobotBit",
   "{id:category}RBBit": "RobotBit",
-  "{id:subcategory}IR Receiver": "IR Receiver2"
+  "{id:subcategory}IR Receiver2": "IR Receiver2"
 }

@@ -47,28 +47,47 @@
 // }
 
 const enum IrButton {
-  //% block="B0_0"
+  //% block = "B0_0"
   B0_0 = 0x45,
+  //% block = "B0_0"
   B0_1 = 0x46,
+  //% block = "B0_0"
   B0_2 = 0x47,
+  //% block = "B1_0"
   B1_0 = 0x44,
+  //% block = "B1_1"
   B1_1 = 0x40,
+  //% block = "B1_2"
   B1_2 = 0x43,
+  //% block = "B2_0"
   B2_0 = 0x07,
+  //% block = "B2_1"
   B2_1 = 0x15,
+  //% block = "B2_2"
   B2_2 = 0x09,
+  //% block = "B3_0"
   B3_0 = 0x16,
+  //% block = "B3_1"
   B3_1 = 0x19,
+  //% block = "B3_2"
   B3_2 = 0x0D,
+  //% block = "B4_0"
   B4_0 = 0x0C,
+  //% block = "B4_1"
   B4_1 = 0x18,
+  //% block = "B4_2"
   B4_2 = 0x5E,
+  //% block = "B5_0"
   B5_0 = 0x08,
+  //% block = "B5_1"
   B5_1 = 0x1C,
+  //% block = "B5_2"
   B5_2 = 0x5A,
   //% block="B6_0"
   B6_0 = 0x42,
+  //% block = "B6_1"
   B6_1 = 0x52,
+  //% block = "B6_2"
   B6_2 = 0x4A,
 }
 
@@ -84,7 +103,7 @@ const enum IrProtocol {
   Keyestudio = 0,
   //% block="NEC"
   NEC = 1,
-  //% block_Other = "NEC_OTHER"
+  //% block="NEC_OTHER"
   NEC_OTHER = 2,
 }
 
