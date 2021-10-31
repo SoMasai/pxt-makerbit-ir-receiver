@@ -2,11 +2,11 @@
  * IR tests
  */
 
-makerbit.connectIrReceiver(DigitalPin.P0, IrProtocol.NEC);
-makerbit.onIrButton(IrButton.B0_0, IrButtonAction.Pressed, () => {});
-makerbit.onIrButton(IrButton.B1_0, IrButtonAction.Released, () => {});
-makerbit.onIrDatagram(() => {});
-const received: boolean = makerbit.wasIrDataReceived();
-const button: number = makerbit.irButton();
-const datagram: string = makerbit.irDatagram();
-const buttonCode: number = makerbit.irButtonCode(IrButton.B2_2);
+ RBBit.connectIrReceiver(DigitalPin.P0, IrProtocol.NEC);
+ RBBit.onIrButton(IrButton.B0_0, IrButtonAction.Pressed, () => {});
+ RBBit.onIrButton(IrButton.B1_0, IrButtonAction.Released, () => {});
+ RBBit.onIrDatagram(() => {});
+const received: boolean = RBBit.wasIrDataReceived();
+const button: number = RBBit.irButton();
+const datagram: string = RBBit.irDatagram();
+const buttonCode: number = RBBit.irButtonCode(IrButton.B2_2);

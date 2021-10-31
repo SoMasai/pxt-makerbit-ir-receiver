@@ -66,7 +66,7 @@ const enum IrProtocol {
 
 //% color=#0fbc11 icon="\u272a" block="RBBit"
 //% category="RBBit"
-namespace makerbit {
+namespace RBBit {
   let irState: IrState;
 
   const IR_REPEAT = 256;
@@ -237,7 +237,7 @@ namespace makerbit {
    * @param protocol IR protocol, eg: IrProtocol.Keyestudio
    */
   //% subcategory="IR Receiver2"
-  //% blockId="makerbit_infrared_connect_receiver"
+  //% blockId="RBBit_infrared_connect_receiver"
   //% block="connect IR receiver at pin %pin and decode %protocol"
   //% pin.fieldEditor="gridpicker"
   //% pin.fieldOptions.columns=4
@@ -286,7 +286,7 @@ namespace makerbit {
    * @param handler body code to run when the event is raised
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_on_ir_button
+  //% blockId=RBBit_infrared_on_ir_button
   //% block="on IR button | %button | %action"
   //% button.fieldEditor="gridpicker"
   //% button.fieldOptions.columns=3
@@ -310,7 +310,7 @@ namespace makerbit {
    * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_ir_button_pressed
+  //% blockId=RBBit_infrared_ir_button_pressed
   //% block="IR button"
   //% weight=70
   export function irButton(): number {
@@ -326,7 +326,7 @@ namespace makerbit {
    * @param handler body code to run when the event is raised
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_on_ir_datagram
+  //% blockId=RBBit_infrared_on_ir_datagram
   //% block="on IR datagram received"
   //% weight=40
   export function onIrDatagram(handler: () => void) {
@@ -339,7 +339,7 @@ namespace makerbit {
    * The last received datagram is returned or "0x00000000" if no data has been received yet.
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_ir_datagram
+  //% blockId=RBBit_infrared_ir_datagram
   //% block="IR datagram"
   //% weight=30
   export function irDatagram(): string {
@@ -356,7 +356,7 @@ namespace makerbit {
    * Returns true if any IR data was received since the last call of this function. False otherwise.
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_was_any_ir_datagram_received
+  //% blockId=RBBit_infrared_was_any_ir_datagram_received
   //% block="IR data was received"
   //% weight=80
   export function wasIrDataReceived(): boolean {
@@ -375,7 +375,7 @@ namespace makerbit {
    * @param button the button
    */
   //% subcategory="IR Receiver2"
-  //% blockId=makerbit_infrared_button_code
+  //% blockId=RBBit_infrared_button_code
   //% button.fieldEditor="gridpicker"
   //% button.fieldOptions.columns=3
   //% button.fieldOptions.tooltips="false"
